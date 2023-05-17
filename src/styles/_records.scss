@@ -1,0 +1,64 @@
+.records {
+    display: grid;
+    grid-template-columns: 169px 169px;
+    grid-row-gap: 14px;
+    grid-column-gap: 12px;
+    grid-auto-columns: 1fr;
+    align-items: stretch;
+    font-family: $fontPJS;
+    color: $dark;
+    justify-content: center;
+}
+
+.record {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    &-desc{
+        display: flex;
+        flex-direction: column;
+        &__btnLike {
+            position: absolute;
+        }
+    
+        &__img {
+            border-radius: 8px;
+            width: 100%;
+        }
+    
+        &__songName {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            margin: 8px 0 3px 0;
+        }
+    
+        &__artist {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            margin: 0 0 7px 0;
+        }
+    
+        &__desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: $grey;
+            margin:  0 0 3px 0;
+        }
+    
+        &__descValue {
+            color: $dark;
+        }
+    }
+    
+    &__btn{
+        margin: 8px 0 0 0;
+    }
+    &__plus{
+        margin: 0 0 0 9px;
+    }
+}

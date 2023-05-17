@@ -83,7 +83,6 @@ video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -129,4 +128,8 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+html,body{
+    width: 100vw;
+    font-family: $fontPoppins;
 }

@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Projector</title>
 </head>
+
 <body>
-    <h1>Test</h1>
+    <header class="header padding">
+        <div class="header__group header__back">
+            <object class="header__svg header__backSvg" data="images/back.svg" type="image/svg+xml"></object>
+            <span class="header__text">Back</span>
+        </div>
+        <div class="header__group">
+            <object class="header__svg header__heartSvg" data="images/heart.svg" type="image/svg+xml"></object>
+            <object class="header__svg header__folderSvg" data="images/folder.svg" type="image/svg+xml"></object>
+        </div>
+    </header>
+    <form action="" class="form padding">
+        <input type="text" name="artist" class="form__item" id="artist" placeholder="Artist">
+        <select class="form__item" name="genre" id="genre">
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Hip-hop">Hip-hop</option>
+            <option value="Classic">Classic</option>
+          </select>
+          <select class="form__item" name="decade" id="decade">
+            <option value="1950-60 рр.">1950-60 рр.</option>
+            <option value="1960-70 рр.">1960-70 рр.</option>
+            <option value="1970-80 рр.">1970-80 рр.</option>
+            <option value="1980-90 рр.">1980-90 рр.</option>
+            <option value="1990-00 рр.">1990-00 рр.</option>
+            <option value="2000-10 рр.">2000-10 рр.</option>
+            <option value="2010-20 рр.">2010-20 рр.</option>
+            <option value="2000-10 рр.">2000-10 рр.</option>
+          </select>
+          <select class="form__item" name="country" id="country">
+            <option value="Ukraine">Ukraine</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+          </select>
+          <button type="submit" class="btn" id="form-btn">Search</button>
+    </form>
+    <main class="records padding">
+    </main>
+    <nav class="pagination">
+        <div class="pagination-number pagination-active">1</div>
+        <div class="pagination-number">2</div>
+        <div class="pagination-number">3</div>
+        <div class="pagination-number">...</div>
+        <div class="pagination-number">8</div>
+    </nav>
 </body>
+
 </html>

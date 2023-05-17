@@ -1,0 +1,76 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "img": "images/1.jpg",
+      "song": "Let There Be Rock",
+      "artist": "AC/DC",
+      "year": 1990,
+      "style": "Punk, Dub, Funk",
+      "country": "USA"
+    },
+    {
+      "id": 2,
+      "img": "images/1.jpg",
+      "song": "Let There Be Rock",
+      "artist": "AC/DC",
+      "year": 1990,
+      "style": "Punk, Dub, Funk",
+      "country": "USA"
+    },
+    {
+      "id": 1,
+      "img": "images/1.jpg",
+      "song": "Let There Be Rock",
+      "artist": "AC/DC",
+      "year": 1990,
+      "style": "Punk, Dub, Funk",
+      "country": "USA"
+    },
+    {
+      "id": 2,
+      "img": "images/1.jpg",
+      "song": "Let There Be Rock",
+      "artist": "AC/DC",
+      "year": 1990,
+      "style": "Punk, Dub, Funk",
+      "country": "USA"
+    },
+    {
+      "id": 1,
+      "img": "images/1.jpg",
+      "song": "Let There Be Rock",
+      "artist": "AC/DC",
+      "year": 1990,
+      "style": "Punk, Dub, Funk",
+      "country": "USA"
+    },
+    {
+      "id": 2,
+      "img": "images/1.jpg",
+      "song": "Let There Be Rock",
+      "artist": "AC/DC",
+      "year": 1990,
+      "style": "Punk, Dub, Funk",
+      "country": "USA"
+    },
+    {
+      "id": 1,
+      "img": "images/1.jpg",
+      "song": "Let There Be Rock",
+      "artist": "AC/DC",
+      "year": 1990,
+      "style": "Punk, Dub, Funk",
+      "country": "USA"
+    },
+    {
+      "id": 2,
+      "img": "images/1.jpg",
+      "song": "Let There Be Rock",
+      "artist": "AC/DC",
+      "year": 1990,
+      "style": "Punk, Dub, Funk",
+      "country": "USA"
+    }
+  ]
+}

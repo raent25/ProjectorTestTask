@@ -1,0 +1,40 @@
+.form {
+    margin: 16px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    font-family: $fontPJS;
+    grid-template-areas:
+        "artist artist"
+        "genre decade"
+        "country country"
+        "btn btn";
+
+    &__item {
+        height: 42px;
+        border: 1px solid #EDEEF0;
+        border-radius: 4px;
+        padding: 0 20px 0 14px;
+    }
+}
+
+#artist {
+    grid-area: artist;
+}
+
+#genre {
+    grid-area: genre;
+}
+
+#decade {
+    grid-area: decade;
+}
+
+#country {
+    grid-area: country;
+}
+
+#form-btn {
+    grid-area: btn;
+    margin-bottom: 2px;
+}

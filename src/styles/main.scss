@@ -1,1 +1,26 @@
+@import "var";
 @import "reset";
+@import "header";
+@import "form";
+@import "records";
+@import "pagination";
+.padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    background: $main;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    border-radius: 4px;
+    cursor: pointer;
+}
