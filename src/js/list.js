@@ -1,21 +1,90 @@
-const getResource = async (url) => {
-    const res = await fetch(url);
+// const getResource = async (url) => {
+//     const res = await fetch(url);
 
-    if (!res.ok) {
-        throw new Error(`Could not fetch ${url}, status:${res.status}`);
-    }
-    return await res.json();
-};
+//     if (!res.ok) {
+//         throw new Error(`Could not fetch ${url}, status:${res.status}`);
+//     }
+//     return await res.json();
+// };
 
-function record(){
+function record() {
     const record = document.querySelector('.records');
     record.innerHTML = '';
-    getResource('http://localhost:3000/records')
-    .then(data => {
-        data.forEach(obj =>{
-            new MenuBlock(obj, '.records');
-        });
-    });
+    let arrRecords = {
+        "records": [{
+                "id": 1,
+                "img": "images/1.jpg",
+                "song": "Let There Be Rock",
+                "artist": "AC/DC",
+                "year": 1990,
+                "style": "Punk, Dub, Funk",
+                "country": "USA"
+            },
+            {
+                "id": 2,
+                "img": "images/1.jpg",
+                "song": "Let There Be Rock",
+                "artist": "AC/DC",
+                "year": 1990,
+                "style": "Punk, Dub, Funk",
+                "country": "USA"
+            },
+            {
+                "id": 1,
+                "img": "images/1.jpg",
+                "song": "Let There Be Rock",
+                "artist": "AC/DC",
+                "year": 1990,
+                "style": "Punk, Dub, Funk",
+                "country": "USA"
+            },
+            {
+                "id": 2,
+                "img": "images/1.jpg",
+                "song": "Let There Be Rock",
+                "artist": "AC/DC",
+                "year": 1990,
+                "style": "Punk, Dub, Funk",
+                "country": "USA"
+            },
+            {
+                "id": 1,
+                "img": "images/1.jpg",
+                "song": "Let There Be Rock",
+                "artist": "AC/DC",
+                "year": 1990,
+                "style": "Punk, Dub, Funk",
+                "country": "USA"
+            },
+            {
+                "id": 2,
+                "img": "images/1.jpg",
+                "song": "Let There Be Rock",
+                "artist": "AC/DC",
+                "year": 1990,
+                "style": "Punk, Dub, Funk",
+                "country": "USA"
+            },
+            {
+                "id": 1,
+                "img": "images/1.jpg",
+                "song": "Let There Be Rock",
+                "artist": "AC/DC",
+                "year": 1990,
+                "style": "Punk, Dub, Funk",
+                "country": "USA"
+            },
+            {
+                "id": 2,
+                "img": "images/1.jpg",
+                "song": "Let There Be Rock",
+                "artist": "AC/DC",
+                "year": 1990,
+                "style": "Punk, Dub, Funk",
+                "country": "USA"
+            }
+        ]
+    }
     class MenuBlock {
         constructor(arr, parent) {
             this.id = arr.id;
@@ -44,6 +113,8 @@ function record(){
             this.parent.innerHTML = this.parent.innerHTML + record;
         }
     }
-
+    arrRecords.records.forEach(obj => {
+        new MenuBlock(obj, '.records');
+    });
 }
 export default record;

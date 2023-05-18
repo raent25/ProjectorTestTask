@@ -1,0 +1,56 @@
+.dropdown-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: $greydark;
+
+    &__active {
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__text {}
+
+    &__arrow {
+        transition-duration: 500ms;
+    }
+
+    &__svg {}
+
+    &__options {
+        top: 44px;
+        width: calc(100% - 2px);
+        position: absolute;
+        border: 1px solid $greylight;
+        border-radius: 4px;
+        overflow: hidden;
+        z-index: 1;
+        background-color: $white;
+        display: none;
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        height: 44px;
+        padding: 0 20px;
+        cursor: pointer;
+        &-active{
+background-color: $greylight;
+        }
+    }
+
+    &__option:hover {
+        background-color: $greylight;
+    }
+
+    &-active &__options {
+        display: block;
+    }
+    &-active &__arrow{
+        transform: rotateX(180deg);
+    }
+}

@@ -1,5 +1,4 @@
 .header {
-    // width: 100%;
     height: 62px;
     background-color: $main;
     color: $white;
@@ -16,8 +15,16 @@
         line-height: 27px;
     }
 
+    &__svg {
+        cursor: pointer;
+    }
+
     &__svg:hover {
         animation: svgHover 0.5s linear infinite;
+    }
+
+    &__back {
+        cursor: pointer;
     }
 
     &__back:hover &__backSvg {
@@ -50,6 +57,7 @@
         transform: translateY(0);
     }
 }
+
 @keyframes svgBackHover {
     0% {
         transform: translateX(0);

@@ -16,49 +16,52 @@
     flex-direction: column;
     height: 100%;
     position: relative;
-    &-desc{
+
+    &-desc {
         display: flex;
         flex-direction: column;
+
         &__btnLike {
             position: absolute;
         }
-    
+
         &__img {
             border-radius: 8px;
             width: 100%;
         }
-    
+
         &__songName {
             font-weight: 700;
             font-size: 14px;
             line-height: 18px;
             margin: 8px 0 3px 0;
         }
-    
+
         &__artist {
             font-weight: 500;
             font-size: 14px;
             line-height: 18px;
             margin: 0 0 7px 0;
         }
-    
+
         &__desc {
             font-weight: 400;
             font-size: 14px;
             line-height: 18px;
             color: $grey;
-            margin:  0 0 3px 0;
+            margin: 0 0 3px 0;
         }
-    
+
         &__descValue {
             color: $dark;
         }
     }
-    
-    &__btn{
+
+    &__btn {
         margin: 8px 0 0 0;
     }
-    &__plus{
+
+    &__plus {
         margin: 0 0 0 9px;
     }
 }

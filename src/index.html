@@ -19,31 +19,9 @@
             <object class="header__svg header__folderSvg" data="images/folder.svg" type="image/svg+xml"></object>
         </div>
     </header>
-    <form action="" class="form padding">
-        <input type="text" name="artist" class="form__item" id="artist" placeholder="Artist">
-        <select class="form__item" name="genre" id="genre">
-            <option value="Rock">Rock</option>
-            <option value="Pop">Pop</option>
-            <option value="Hip-hop">Hip-hop</option>
-            <option value="Classic">Classic</option>
-          </select>
-          <select class="form__item" name="decade" id="decade">
-            <option value="1950-60 рр.">1950-60 рр.</option>
-            <option value="1960-70 рр.">1960-70 рр.</option>
-            <option value="1970-80 рр.">1970-80 рр.</option>
-            <option value="1980-90 рр.">1980-90 рр.</option>
-            <option value="1990-00 рр.">1990-00 рр.</option>
-            <option value="2000-10 рр.">2000-10 рр.</option>
-            <option value="2010-20 рр.">2010-20 рр.</option>
-            <option value="2000-10 рр.">2000-10 рр.</option>
-          </select>
-          <select class="form__item" name="country" id="country">
-            <option value="Ukraine">Ukraine</option>
-            <option value="UK">UK</option>
-            <option value="USA">USA</option>
-          </select>
-          <button type="submit" class="btn" id="form-btn">Search</button>
-    </form>
+    <div class="filter padding">
+        <input type="text" name="artist" class="filter__item" id="artist" placeholder="Artist">
+    </div>
     <main class="records padding">
     </main>
     <nav class="pagination">
@@ -53,6 +31,7 @@
         <div class="pagination-number">...</div>
         <div class="pagination-number">8</div>
     </nav>
+
 </body>
 
 </html>
