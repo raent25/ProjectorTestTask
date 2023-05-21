@@ -1,6 +1,6 @@
 function memory() {
     let records = document.querySelectorAll('.record');
-    let recordsArr = JSON.parse(localStorage.getItem('data-record-id'));
+    let recordsArr = JSON.parse(localStorage.getItem('data-record-id')) ? JSON.parse(localStorage.getItem('data-record-id')) : [];
     records.forEach(record => {
         let recordId = record.getAttribute('data-record-id');
         recordsArr.forEach(id => {
