@@ -12,7 +12,7 @@ const devServer = (isDev) => !isDev ? {} : {
 };
 
 module.exports = ({ develop }) => ({
-    mode: develop ? 'development' : 'production',
+    mode: 'production',
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),

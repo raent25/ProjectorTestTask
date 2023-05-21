@@ -16,6 +16,8 @@
         border-radius: 4px;
         padding: 0 20px 0 14px;
         cursor: pointer;
+        position: relative;
+
     }
 }
 
@@ -34,7 +36,30 @@
 #country {
     grid-area: country;
 }
+
 #filter-btn {
     grid-area: btn;
     margin-bottom: 2px;
+}
+
+.alertToInput {
+    position: absolute;
+    z-index: 2;
+    font-size: 10px;
+    color: $red;
+    transform: translateY(-10px);
+}
+
+@media screen and (min-width: 1000px) {
+    .filter {
+        margin: 16px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+        font-family: $fontPJS;
+        grid-template-areas:
+            "artist artist artist"
+            "genre decade country"
+            "btn btn btn";
+    }
 }

@@ -1,10 +1,5 @@
 @import "var";
 @import "reset";
-@import "header";
-@import "form";
-@import "records";
-@import "pagination";
-@import "dropdown";
 
 .padding {
     padding-left: 20px;
@@ -26,3 +21,9 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+@import "header";
+@import "search";
+@import "records";
+@import "pagination";
+@import "dropdown";

@@ -12,13 +12,9 @@
         overflow: hidden;
     }
 
-    &__text {}
-
     &__arrow {
         transition-duration: 500ms;
     }
-
-    &__svg {}
 
     &__options {
         top: 44px;
@@ -38,8 +34,9 @@
         height: 44px;
         padding: 0 20px;
         cursor: pointer;
-        &-active{
-background-color: $greylight;
+
+        &-active {
+            background-color: $greylight;
         }
     }
 
@@ -50,7 +47,8 @@ background-color: $greylight;
     &-active &__options {
         display: block;
     }
-    &-active &__arrow{
+
+    &-active &__arrow {
         transform: rotateX(180deg);
     }
 }

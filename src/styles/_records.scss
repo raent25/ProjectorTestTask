@@ -1,6 +1,6 @@
 .records {
     display: grid;
-    grid-template-columns: 169px 169px;
+    grid-template-columns: repeat(auto-fit, minmax(169px, 169px));
     grid-row-gap: 14px;
     grid-column-gap: 12px;
     grid-auto-columns: 1fr;
@@ -23,6 +23,24 @@
 
         &__btnLike {
             position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+
+            &>.heartdarkActive {
+                display: none;
+            }
+
+            &>.heartdark {
+                display: block;
+            }
         }
 
         &__img {
@@ -59,9 +77,35 @@
 
     &__btn {
         margin: 8px 0 0 0;
+
+        &-cansel {
+            display: none;
+            background-color: $greydark;
+        }
     }
 
     &__plus {
         margin: 0 0 0 9px;
     }
 }
+
+.likeHeart {
+    fill: none;
+}
+
+.record-active {
+
+    &>.heartdarkActive {
+        display: flex;
+    }
+
+    &>.heartdark {
+        display: none;
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    юrecord-desc__img {
+      width: 338px;
+      height: 338px;
+    }
+  }
